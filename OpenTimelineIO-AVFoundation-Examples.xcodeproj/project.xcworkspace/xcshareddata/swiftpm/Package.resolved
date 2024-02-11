@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "opentimelineio-avfoundation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Synopsis/OpenTimelineIO-AVFoundation/",
+      "state" : {
+        "branch" : "feature/timeline-to-composition",
+        "revision" : "30d510497fc577fe23b1b9bfa3c390bd06bdf311"
+      }
+    },
+    {
+      "identity" : "opentimelineio-swift-bindings",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/openTimelineIO/OpenTimelineIO-Swift-Bindings",
+      "state" : {
+        "branch" : "main",
+        "revision" : "77d532fb85d57979f2d6c81fd4dd6d46ff3c220e"
+      }
+    },
+    {
+      "identity" : "timecodekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/orchetect/TimecodeKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c5b8de894bc52d691cbc2d6ed974670bea741230"
+      }
+    }
+  ],
+  "version" : 2
+}

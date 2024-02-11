@@ -13,6 +13,7 @@
 		1B158B382B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B158B372B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesTests.swift */; };
 		1B158B422B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B158B412B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITests.swift */; };
 		1B158B442B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B158B432B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITestsLaunchTests.swift */; };
+		1B158B522B7842AE009D3EAA /* OpenTimelineIO-AVFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 1B158B512B7842AE009D3EAA /* OpenTimelineIO-AVFoundation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B158B522B7842AE009D3EAA /* OpenTimelineIO-AVFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +136,9 @@
 			dependencies = (
 			);
 			name = "OpenTimelineIO-AVFoundation-Examples";
+			packageProductDependencies = (
+				1B158B512B7842AE009D3EAA /* OpenTimelineIO-AVFoundation */,
+			);
 			productName = "OpenTimelineIO-AVFoundation-Examples";
 			productReference = 1B158B242B784234009D3EAA /* OpenTimelineIO-AVFoundation-Examples.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +211,9 @@
 				Base,
 			);
 			mainGroup = 1B158B1B2B784234009D3EAA;
+			packageReferences = (
+				1B158B502B7842AE009D3EAA /* XCRemoteSwiftPackageReference "OpenTimelineIO-AVFoundation" */,
+			);
 			productRefGroup = 1B158B252B784234009D3EAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -424,7 +432,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHG3AW6YV7;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -451,7 +459,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SHG3AW6YV7;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -580,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B158B502B7842AE009D3EAA /* XCRemoteSwiftPackageReference "OpenTimelineIO-AVFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Synopsis/OpenTimelineIO-AVFoundation/";
+			requirement = {
+				branch = "feature/timeline-to-composition";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B158B512B7842AE009D3EAA /* OpenTimelineIO-AVFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B158B502B7842AE009D3EAA /* XCRemoteSwiftPackageReference "OpenTimelineIO-AVFoundation" */;
+			productName = "OpenTimelineIO-AVFoundation";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B158B1C2B784234009D3EAA /* Project object */;
 }

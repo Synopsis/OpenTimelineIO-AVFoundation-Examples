@@ -6,15 +6,29 @@
 //
 
 import Cocoa
-
+import AVKit
+import AVFoundation
+import CoreMedia
+import OpenTimelineIO_AVFoundation
+import OpenTimelineIO
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet var window: NSWindow!
+    @MainActor @IBOutlet var window: NSWindow!
 
-
+    @MainActor @IBOutlet weak var playerView: AVPlayerView!
+    
+    @MainActor let player = AVPlayer()
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+
+        self.playerView.player = self.player
+        self.playerView.allowsVideoFrameAnalysis = false
+        self.playerView.showsFrameSteppingButtons = true
+        self.playerView.showsTimecodes = true
+        self.playerView.showsFullScreenToggleButton = true
+        self.playerView.showsSharingServiceButton = true
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -25,6 +39,45 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
-
+    @IBAction func open(_ sender: Any) 
+    {
+        let open = NSOpenPanel()
+        
+        open.allowedContentTypes = [ UTType(filenameExtension: "otio")! ]
+        
+        let response = open.runModal()
+        
+            
+            if response == .OK
+            {
+                self.loadOTIOFileFrom(url: open.url!)
+            }
+            
+    
+    }
+    
+    private func loadOTIOFileFrom(url:URL)
+    {
+        Task
+        {
+            do {
+                if
+                    let timeline = try Timeline.fromJSON(url: url) as? Timeline,
+                    let (composition, videoComposition, audioMix) = try await timeline.toAVCompositionRenderables()
+                {
+                    let playerItem = AVPlayerItem(asset: composition)
+                    playerItem.videoComposition = videoComposition
+                    playerItem.audioMix = audioMix
+                    
+                    self.player.replaceCurrentItem(with: playerItem)
+                }
+            }
+            catch
+            {
+                print(error)
+            }
+        }
+    }
+    
 }
 
