@@ -594,7 +594,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Synopsis/OpenTimelineIO-AVFoundation/";
 			requirement = {
-				branch = "feature/timeline-to-composition";
+				branch = feature/timecode;
 				kind = branch;
 			};
 		};

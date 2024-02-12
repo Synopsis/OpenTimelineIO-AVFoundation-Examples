@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Synopsis/OpenTimelineIO-AVFoundation/",
       "state" : {
-        "branch" : "feature/timeline-to-composition",
-        "revision" : "30d510497fc577fe23b1b9bfa3c390bd06bdf311"
+        "branch" : "feature/timecode",
+        "revision" : "11730098f9eefa8d88c524086b6eb68672a4d89f"
       }
     },
     {

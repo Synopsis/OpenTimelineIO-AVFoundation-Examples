@@ -63,7 +63,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             do {
                 if
                     let timeline = try Timeline.fromJSON(url: url) as? Timeline,
-                    let (composition, videoComposition, audioMix) = try await timeline.toAVCompositionRenderables()
+                    let (composition, videoComposition, audioMix) = try await timeline.toAVCompositionRenderables(baseURL: url.deletingLastPathComponent() )
                 {
                     let playerItem = AVPlayerItem(asset: composition)
                     playerItem.videoComposition = videoComposition
@@ -78,6 +78,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
     }
-    
 }
 
