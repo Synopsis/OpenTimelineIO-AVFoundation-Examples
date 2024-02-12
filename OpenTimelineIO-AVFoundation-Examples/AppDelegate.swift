@@ -46,14 +46,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         open.allowedContentTypes = [ UTType(filenameExtension: "otio")! ]
         
         let response = open.runModal()
-        
             
-            if response == .OK
-            {
-                self.loadOTIOFileFrom(url: open.url!)
-            }
-            
-    
+        if response == .OK
+        {
+            self.loadOTIOFileFrom(url: open.url!)
+        }
     }
     
     private func loadOTIOFileFrom(url:URL)
