@@ -20,7 +20,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @MainActor let player = AVPlayer()
     
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification)
+    {
         // Insert code here to initialize your application
 
         self.playerView.player = self.player
@@ -31,11 +32,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.playerView.showsSharingServiceButton = true
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
+    func applicationWillTerminate(_ aNotification: Notification)
+    {
         // Insert code here to tear down your application
     }
 
-    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool
+    {
         return true
     }
 
