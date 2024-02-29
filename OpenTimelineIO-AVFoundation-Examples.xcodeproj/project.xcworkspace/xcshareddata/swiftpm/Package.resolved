@@ -6,7 +6,7 @@
       "location" : "https://github.com/Synopsis/OpenTimelineIO-AVFoundation/",
       "state" : {
         "branch" : "main",
-        "revision" : "cd77cc15421d636e31f55b78d9b8acbb5efd7db9"
+        "revision" : "fd3afc30694072d1e701f8a6ff6e2857d1fc79ac"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/openTimelineIO/OpenTimelineIO-Swift-Bindings",
       "state" : {
         "branch" : "main",
-        "revision" : "77d532fb85d57979f2d6c81fd4dd6d46ff3c220e"
+        "revision" : "10973f2c0fe3e3c6d9121112928d1d65f0d65aeb"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://github.com/orchetect/TimecodeKit",
       "state" : {
         "branch" : "main",
-        "revision" : "c5b8de894bc52d691cbc2d6ed974670bea741230"
+        "revision" : "63ba241b35675a23802f0937c5b938e74e4f9aea"
       }
     }
   ],
