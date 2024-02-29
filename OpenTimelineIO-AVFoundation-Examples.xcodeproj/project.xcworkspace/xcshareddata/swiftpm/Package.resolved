@@ -6,7 +6,7 @@
       "location" : "https://github.com/Synopsis/OpenTimelineIO-AVFoundation/",
       "state" : {
         "branch" : "main",
-        "revision" : "fd3afc30694072d1e701f8a6ff6e2857d1fc79ac"
+        "revision" : "cdf2c7d5c740a2b9f0d4e020225286a476224033"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://github.com/orchetect/TimecodeKit",
       "state" : {
         "branch" : "main",
-        "revision" : "63ba241b35675a23802f0937c5b938e74e4f9aea"
+        "revision" : "c5b8de894bc52d691cbc2d6ed974670bea741230"
       }
     }
   ],

@@ -11,6 +11,9 @@ import AVFoundation
 import CoreMedia
 import OpenTimelineIO_AVFoundation
 import OpenTimelineIO
+import MediaToolbox
+import VideoToolbox
+
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
@@ -23,6 +26,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification)
     {
         // Insert code here to initialize your application
+        
+        MTRegisterProfessionalVideoWorkflowFormatReaders()
+        VTRegisterProfessionalVideoWorkflowVideoDecoders()
+        VTRegisterProfessionalVideoWorkflowVideoEncoders()
+        VTRegisterSupplementalVideoDecoderIfAvailable(kCMVideoCodecType_AV1)
+        VTRegisterSupplementalVideoDecoderIfAvailable(kCMVideoCodecType_VP9)
 
         self.playerView.player = self.player
         self.playerView.allowsVideoFrameAnalysis = false
@@ -39,7 +48,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool
     {
-        return true
+        return false
     }
 
     @IBAction func open(_ sender: Any) 
@@ -65,11 +74,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     let timeline = try Timeline.fromJSON(url: url) as? Timeline,
                     let (composition, videoComposition, audioMix) = try await timeline.toAVCompositionRenderables(baseURL: url.deletingLastPathComponent() )
                 {
+                    
                     let playerItem = AVPlayerItem(asset: composition)
                     playerItem.videoComposition = videoComposition
                     playerItem.audioMix = audioMix
                     
-                    self.player.replaceCurrentItem(with: playerItem)
+                    await MainActor.run {
+                        self.player.replaceCurrentItem(with: playerItem)
+                    }
                 }
             }
             catch

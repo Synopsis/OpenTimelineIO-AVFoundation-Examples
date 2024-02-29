@@ -14,6 +14,10 @@
 		1B158B422B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B158B412B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITests.swift */; };
 		1B158B442B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B158B432B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITestsLaunchTests.swift */; };
 		1B158B522B7842AE009D3EAA /* OpenTimelineIO-AVFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 1B158B512B7842AE009D3EAA /* OpenTimelineIO-AVFoundation */; };
+		1B8BC6C82B8FF93C00C1E05A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8BC6C72B8FF93C00C1E05A /* AVFoundation.framework */; };
+		1B8BC6CA2B8FF94100C1E05A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8BC6C92B8FF94100C1E05A /* CoreMedia.framework */; };
+		1B8BC6CC2B8FF94500C1E05A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8BC6CB2B8FF94500C1E05A /* VideoToolbox.framework */; };
+		1B8BC6CE2B8FF94B00C1E05A /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8BC6CD2B8FF94B00C1E05A /* MediaToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		1B158B3D2B784236009D3EAA /* OpenTimelineIO-AVFoundation-ExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenTimelineIO-AVFoundation-ExamplesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B158B412B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTimelineIO_AVFoundation_ExamplesUITests.swift; sourceTree = "<group>"; };
 		1B158B432B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTimelineIO_AVFoundation_ExamplesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B8BC6C72B8FF93C00C1E05A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1B8BC6C92B8FF94100C1E05A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1B8BC6CB2B8FF94500C1E05A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		1B8BC6CD2B8FF94B00C1E05A /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8BC6CE2B8FF94B00C1E05A /* MediaToolbox.framework in Frameworks */,
+				1B8BC6CC2B8FF94500C1E05A /* VideoToolbox.framework in Frameworks */,
+				1B8BC6CA2B8FF94100C1E05A /* CoreMedia.framework in Frameworks */,
+				1B8BC6C82B8FF93C00C1E05A /* AVFoundation.framework in Frameworks */,
 				1B158B522B7842AE009D3EAA /* OpenTimelineIO-AVFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +91,7 @@
 				1B158B362B784236009D3EAA /* OpenTimelineIO-AVFoundation-ExamplesTests */,
 				1B158B402B784236009D3EAA /* OpenTimelineIO-AVFoundation-ExamplesUITests */,
 				1B158B252B784234009D3EAA /* Products */,
+				1B8BC6C62B8FF93C00C1E05A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +131,17 @@
 				1B158B432B784236009D3EAA /* OpenTimelineIO_AVFoundation_ExamplesUITestsLaunchTests.swift */,
 			);
 			path = "OpenTimelineIO-AVFoundation-ExamplesUITests";
+			sourceTree = "<group>";
+		};
+		1B8BC6C62B8FF93C00C1E05A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B8BC6CD2B8FF94B00C1E05A /* MediaToolbox.framework */,
+				1B8BC6CB2B8FF94500C1E05A /* VideoToolbox.framework */,
+				1B8BC6C92B8FF94100C1E05A /* CoreMedia.framework */,
+				1B8BC6C72B8FF93C00C1E05A /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
