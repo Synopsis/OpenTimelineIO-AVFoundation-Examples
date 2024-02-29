@@ -26,7 +26,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification)
     {
         // Insert code here to initialize your application
-        
         MTRegisterProfessionalVideoWorkflowFormatReaders()
         VTRegisterProfessionalVideoWorkflowVideoDecoders()
         VTRegisterProfessionalVideoWorkflowVideoEncoders()
@@ -88,7 +87,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     let timeline = try Timeline.fromJSON(url: url) as? Timeline,
                     let (composition, videoComposition, audioMix) = try await timeline.toAVCompositionRenderables(baseURL: url.deletingLastPathComponent() , useAssetTimecode: false)
                 {
-                    
                     let playerItem = AVPlayerItem(asset: composition)
                     playerItem.videoComposition = videoComposition
                     playerItem.audioMix = audioMix
