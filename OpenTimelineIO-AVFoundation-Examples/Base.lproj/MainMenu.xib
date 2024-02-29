@@ -687,7 +687,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="5120" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -696,7 +696,7 @@
                         <rect key="frame" x="0.0" y="70" width="480" height="270"/>
                     </avPlayerView>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6rV-Qv-et0">
-                        <rect key="frame" x="146" y="23" width="188" height="32"/>
+                        <rect key="frame" x="13" y="23" width="188" height="32"/>
                         <buttonCell key="cell" type="push" title="Load OpenTimelineIO File" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4EI-Kh-sO1">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -705,13 +705,25 @@
                             <action selector="open:" target="Voe-Tx-rLC" id="A2S-59-6jw"/>
                         </connections>
                     </button>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4ve-tp-EXQ">
+                        <rect key="frame" x="327" y="23" width="140" height="32"/>
+                        <buttonCell key="cell" type="push" title="Export Quicktime" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ur6-uC-s8z">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="exportWithSender:" target="Voe-Tx-rLC" id="Hsu-Jh-sFm"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="6rV-Qv-et0" secondAttribute="bottom" constant="30" id="OC5-Vc-iTn"/>
+                    <constraint firstItem="6rV-Qv-et0" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="VAj-IP-h2l"/>
                     <constraint firstItem="1ZQ-Nj-2Sy" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="fQn-74-fMj"/>
                     <constraint firstAttribute="trailing" secondItem="1ZQ-Nj-2Sy" secondAttribute="trailing" id="k41-EC-shB"/>
+                    <constraint firstAttribute="bottom" secondItem="4ve-tp-EXQ" secondAttribute="bottom" constant="30" id="luA-Y6-6yE"/>
                     <constraint firstItem="1ZQ-Nj-2Sy" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="mYU-a9-lg8"/>
-                    <constraint firstItem="6rV-Qv-et0" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="wMX-fD-yRL"/>
+                    <constraint firstAttribute="trailing" secondItem="4ve-tp-EXQ" secondAttribute="trailing" constant="20" symbolic="YES" id="qF7-Qt-jXd"/>
                     <constraint firstAttribute="bottom" secondItem="1ZQ-Nj-2Sy" secondAttribute="bottom" constant="70" id="xav-CG-S2x"/>
                 </constraints>
             </view>

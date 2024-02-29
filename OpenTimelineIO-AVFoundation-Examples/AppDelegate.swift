@@ -65,6 +65,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    @IBAction func export(sender:Any)
+    {
+        let save = NSSavePanel()
+        
+        save.allowedContentTypes = [ .mpeg4Movie ]
+        
+        let response = save.runModal()
+            
+        if response == .OK
+        {
+            self.exportToURL(url: save.url!)
+        }
+    }
+    
     private func loadOTIOFileFrom(url:URL)
     {
         Task
@@ -90,5 +104,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
     }
+    
+    private func exportToURL(url:URL)
+    {
+        if
+            let currentItem = self.player.currentItem,
+            let videoComposition = currentItem.videoComposition,
+            let audioMix = currentItem.audioMix
+        {
+            let composition = currentItem.asset
+
+            let exportSession = AVAssetExportSession(asset: composition, presetName: AVAssetExportPresetHighestQuality)
+            exportSession?.videoComposition = videoComposition
+            exportSession?.audioMix = audioMix
+            exportSession?.outputURL = url
+            exportSession?.outputFileType = .mp4
+
+            exportSession?.exportAsynchronously(completionHandler: {
+                NSWorkspace.shared.open(url)
+            })
+        }
+        
+    }
+    
+    
 }
 
