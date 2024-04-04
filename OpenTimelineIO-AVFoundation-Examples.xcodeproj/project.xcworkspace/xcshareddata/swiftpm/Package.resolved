@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Synopsis/OpenTimelineIO-AVFoundation/",
       "state" : {
-        "branch" : "main",
-        "revision" : "70fa499c829db8dc7662a29f519fee788c8cb279"
+        "branch" : "development",
+        "revision" : "542eec7235e7f6c04ff152edb52b62bfd262e0c8"
       }
     },
     {

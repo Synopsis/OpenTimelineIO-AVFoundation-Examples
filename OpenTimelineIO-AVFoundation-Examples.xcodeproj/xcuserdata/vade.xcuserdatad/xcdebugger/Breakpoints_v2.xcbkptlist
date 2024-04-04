@@ -144,7 +144,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
             endingLineNumber = "34"
-            landmarkName = "toAVAssetAndMapping(baseURL:useTimecode:)"
+            landmarkName = "toAVAssetAndMapping(baseURL:useTimecode:rescaleToAsset:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -209,6 +209,86 @@
             startingLineNumber = "67"
             endingLineNumber = "67"
             landmarkName = "testForAsset(path:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70AC91D0-890F-4929-A3E9-8EA2499D6946"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "toAVCompositionRenderables(baseURL:customCompositorClass:useAssetTimecode:rescaleToAsset:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "70AC91D0-890F-4929-A3E9-8EA2499D6946 - 9cbf1761886438fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for OpenTimelineIO.Timeline.toAVCompositionRenderables(baseURL: Swift.Optional&lt;Foundation.URL&gt;, customCompositorClass: Swift.Optional&lt;__C.AVVideoCompositing.Type&gt;, useAssetTimecode: Swift.Bool, rescaleToAsset: Swift.Bool) async throws -&gt; Swift.Optional&lt;(composition: __C.AVComposition, videoComposition: __C.AVVideoComposition, audioMix: __C.AVAudioMix)&gt;"
+                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "3796">
+               </Location>
+               <Location
+                  uuid = "70AC91D0-890F-4929-A3E9-8EA2499D6946 - 9cbf1761886438fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for OpenTimelineIO.Timeline.toAVCompositionRenderables(baseURL: Swift.Optional&lt;Foundation.URL&gt;, customCompositorClass: Swift.Optional&lt;__C.AVVideoCompositing.Type&gt;, useAssetTimecode: Swift.Bool, rescaleToAsset: Swift.Bool) async throws -&gt; Swift.Optional&lt;(composition: __C.AVComposition, videoComposition: __C.AVVideoComposition, audioMix: __C.AVAudioMix)&gt;"
+                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "3756">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A4A7F2D-9B04-45A0-8843-CBECFC699A34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Clip.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "toAVAssetAndMapping(baseURL:useTimecode:rescaleToAsset:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9141EC6A-6A3B-4B9C-802E-B0ECA3DAF657"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Clip.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "toAVAssetAndMapping(baseURL:useTimecode:rescaleToAsset:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
