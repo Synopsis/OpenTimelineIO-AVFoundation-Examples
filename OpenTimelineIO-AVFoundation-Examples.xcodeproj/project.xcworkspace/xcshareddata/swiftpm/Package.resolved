@@ -1,12 +1,13 @@
 {
+  "originHash" : "45328acefae81913398721363403f0896f6c837388c6bbdd3199b3106dab1e2e",
   "pins" : [
     {
       "identity" : "opentimelineio-avfoundation",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Synopsis/OpenTimelineIO-AVFoundation/",
       "state" : {
-        "branch" : "development",
-        "revision" : "542eec7235e7f6c04ff152edb52b62bfd262e0c8"
+        "branch" : "main",
+        "revision" : "70fa499c829db8dc7662a29f519fee788c8cb279"
       }
     },
     {
@@ -28,5 +29,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

@@ -34,38 +34,6 @@
             endingLineNumber = "32"
             landmarkName = "videoComposition(_:shouldContinueValidatingAfterFindingInvalidTrackIDIn:layerInstruction:asset:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "919A551B-BA07-44C5-A9F6-CF339B6A99A7 - 3e8745fabe35a097"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OpenTimelineIO_AVFoundation.VideoCompositionValidator.videoComposition(_: __C.AVVideoComposition, shouldContinueValidatingAfterFindingInvalidTrackIDIn: __C.AVVideoCompositionInstruction, layerInstruction: __C.AVVideoCompositionLayerInstruction, asset: __C.AVAsset) -&gt; Swift.Bool"
-                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "919A551B-BA07-44C5-A9F6-CF339B6A99A7 - fbc82440e3fc99d1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for OpenTimelineIO.Timeline.toAVCompositionRenderables(baseURL: Swift.Optional&lt;Foundation.URL&gt;, customCompositorClass: Swift.Optional&lt;__C.AVVideoCompositing.Type&gt;) async throws -&gt; Swift.Optional&lt;(composition: __C.AVComposition, videoComposition: __C.AVVideoComposition, audioMix: __C.AVAudioMix)&gt;"
-                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "956">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -82,38 +50,6 @@
             endingLineNumber = "27"
             landmarkName = "videoComposition(_:shouldContinueValidatingAfterFindingInvalidTimeRangeIn:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D9FA13F8-40B6-41AE-8839-D03A6C2BEFB9 - 187a111adebb5256"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OpenTimelineIO_AVFoundation.VideoCompositionValidator.videoComposition(_: __C.AVVideoComposition, shouldContinueValidatingAfterFindingInvalidTimeRangeIn: __C.AVVideoCompositionInstruction) -&gt; Swift.Bool"
-                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "48">
-               </Location>
-               <Location
-                  uuid = "D9FA13F8-40B6-41AE-8839-D03A6C2BEFB9 - fbc82440e3fc9655"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for OpenTimelineIO.Timeline.toAVCompositionRenderables(baseURL: Swift.Optional&lt;Foundation.URL&gt;, customCompositorClass: Swift.Optional&lt;__C.AVVideoCompositing.Type&gt;) async throws -&gt; Swift.Optional&lt;(composition: __C.AVComposition, videoComposition: __C.AVVideoComposition, audioMix: __C.AVAudioMix)&gt;"
-                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "536">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -146,38 +82,6 @@
             endingLineNumber = "34"
             landmarkName = "toAVAssetAndMapping(baseURL:useTimecode:rescaleToAsset:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "17DC9A51-3170-419D-B3FB-3538F8CB83AF - 980223d0576fe4b4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OpenTimelineIO.Clip.toAVAssetAndMapping(baseURL: Swift.Optional&lt;Foundation.URL&gt;, useTimecode: Swift.Bool) throws -&gt; Swift.Optional&lt;(asset: __C.AVAsset, timeMaping: __C.CMTimeMapping)&gt;"
-                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Clip.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "768">
-               </Location>
-               <Location
-                  uuid = "17DC9A51-3170-419D-B3FB-3538F8CB83AF - 980223d0576fe4b4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "OpenTimelineIO.Clip.toAVAssetAndMapping(baseURL: Swift.Optional&lt;Foundation.URL&gt;, useTimecode: Swift.Bool) throws -&gt; Swift.Optional&lt;(asset: __C.AVAsset, timeMaping: __C.CMTimeMapping)&gt;"
-                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Clip.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "736">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -226,38 +130,6 @@
             endingLineNumber = "111"
             landmarkName = "toAVCompositionRenderables(baseURL:customCompositorClass:useAssetTimecode:rescaleToAsset:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "70AC91D0-890F-4929-A3E9-8EA2499D6946 - 9cbf1761886438fc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for OpenTimelineIO.Timeline.toAVCompositionRenderables(baseURL: Swift.Optional&lt;Foundation.URL&gt;, customCompositorClass: Swift.Optional&lt;__C.AVVideoCompositing.Type&gt;, useAssetTimecode: Swift.Bool, rescaleToAsset: Swift.Bool) async throws -&gt; Swift.Optional&lt;(composition: __C.AVComposition, videoComposition: __C.AVVideoComposition, audioMix: __C.AVAudioMix)&gt;"
-                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "3796">
-               </Location>
-               <Location
-                  uuid = "70AC91D0-890F-4929-A3E9-8EA2499D6946 - 9cbf1761886438fc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for OpenTimelineIO.Timeline.toAVCompositionRenderables(baseURL: Swift.Optional&lt;Foundation.URL&gt;, customCompositorClass: Swift.Optional&lt;__C.AVVideoCompositing.Type&gt;, useAssetTimecode: Swift.Bool, rescaleToAsset: Swift.Bool) async throws -&gt; Swift.Optional&lt;(composition: __C.AVComposition, videoComposition: __C.AVVideoComposition, audioMix: __C.AVAudioMix)&gt;"
-                  moduleName = "OpenTimelineIO-AVFoundation-Examples"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vade/Library/Developer/Xcode/DerivedData/OpenTimelineIO-AVFoundation-Examples-driknsublgfxsaepuleqcclnkpaw/SourcePackages/checkouts/OpenTimelineIO-AVFoundation/Sources/OpenTimelineIO-AVFoundation/OpenTimelineIO-Extensions/Timeline.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "116"
-                  endingLineNumber = "116"
-                  offsetFromSymbolStart = "3756">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
